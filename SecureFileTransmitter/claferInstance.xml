@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<task description="SecureCommunication">
+  <Package>Crypto</Package>
+  <Imports>
+    <Import>java.security.InvalidAlgorithmParameterException</Import>
+    <Import>java.security.InvalidKeyException</Import>
+    <Import>java.security.NoSuchAlgorithmException</Import>
+    <Import>java.security.NoSuchAlgorithmException</Import>
+    <Import>javax.crypto.SecretKey</Import>
+    <Import>javax.crypto.BadPaddingException</Import>
+    <Import>javax.crypto.Cipher</Import>
+    <Import>javax.crypto.IllegalBlockSizeException</Import>
+    <Import>javax.crypto.NoSuchPaddingException</Import>
+    <Import>java.security.SecureRandom</Import>
+    <Import>javax.crypto.spec.IvParameterSpec</Import>
+    <Import>javax.crypto.spec.SecretKeySpec</Import>
+    <Import>java.security.spec.InvalidKeySpecException</Import>
+    <Import>java.util.List</Import>
+    <Import>java.util.Base64</Import>
+    <Import>java.io.InputStream</Import>
+    <Import>java.io.OutputStream</Import>
+  </Imports>
+  <element type="SecureCommunication">
+    <Ciphersuites>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</Ciphersuites>
+    <Ciphersuites>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384</Ciphersuites>
+    <Ciphersuites>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</Ciphersuites>
+    <Ciphersuites>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384</Ciphersuites>
+    <Ciphersuites>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</Ciphersuites>
+    <Ciphersuites>TLS_DHE_RSA_WITH_AES_256_CBC_SHA256</Ciphersuites>
+    <Ciphersuites>TLS_DHE_DSS_WITH_AES_256_CBC_SHA256</Ciphersuites>
+    <TlsVersion>TLS1_2</TlsVersion>
+    <SecComsecurity>4</SecComsecurity>
+  </element>
+  <code>
+    <server>false</server>
+    <keystore>C:\\Users\\stefank3\\Desktop\\keystore</keystore>
+    <keystorepassword>opencce</keystorepassword>
+  </code>
+</task>
